@@ -1,0 +1,486 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+App	src/test/scala/learnfp/transformer/IdTTest.scala	/^      type App[A] = IdT[A, M];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/IdTTest.scala	/^      type App[A] = IdT[A, Maybe];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/IdTTest.scala	/^      type App[A] = IdT[A, StringState];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^      type App[A] = MaybeT[A, M];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^      type App[A] = MaybeT[A, Maybe];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^      type App[A] = MaybeT[A, StringDisjunction];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^      type App[A] = MaybeT[A, StringState];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/StateTTest.scala	/^      type App[A] = StateT[String, Id, A];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/StateTTest.scala	/^      type App[A] = StateT[String, Maybe, A];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/StateTTest.scala	/^      type App[A] = StateT[String, StringWriter, A];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/TransformerStackTest.scala	/^    type App[A] = StateT[String, OuterT, A];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/WriterTTest.scala	/^      type App[A] = WriterT[A, Id, List[String]];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/WriterTTest.scala	/^      type App[A] = WriterT[A, Maybe, List[String]];$/;"	T	language:scala
+App	src/test/scala/learnfp/transformer/WriterTTest.scala	/^      type App[A] = WriterT[A, StringState, List[String]];$/;"	T	language:scala
+Applicative	src/main/scala/learnfp/applicative/Applicative.scala	/^abstract class Applicative[F[_]](implicit f:Functor[F]) {$/;"	c	language:scala
+ApplicativeOps	src/main/scala/learnfp/applicative/Applicative.scala	/^object ApplicativeOps {$/;"	o	language:scala
+Comparator	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^object Comparator {$/;"	o	language:scala
+Disjunction	src/main/scala/learnfp/functor/Disjunction.scala	/^  sealed trait Disjunction[+L, +R]$/;"	t	language:scala
+Disjunction	src/main/scala/learnfp/functor/Disjunction.scala	/^object Disjunction {$/;"	o	language:scala
+DisjunctionFxOps	src/main/scala/learnfp/functor/Disjunction.scala	/^  class DisjunctionFxOps[A, R](fx:A => R) {$/;"	c	language:scala
+DisjunctionInstance	src/main/scala/learnfp/applicative/Disjunction.scala	/^object DisjunctionInstance {$/;"	o	language:scala
+DisjunctionInstance	src/main/scala/learnfp/functor/Disjunction.scala	/^object DisjunctionInstance {$/;"	o	language:scala
+DisjunctionInstance	src/main/scala/learnfp/monad/Disjunction.scala	/^object DisjunctionInstance {$/;"	o	language:scala
+DisjunctionInstance	src/main/scala/learnfp/traversable/Disjunction.scala	/^object DisjunctionInstance {$/;"	o	language:scala
+DisjunctionTest	src/test/scala/learnfp/applicative/DisjunctionTest.scala	/^class DisjunctionTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+DisjunctionTest	src/test/scala/learnfp/functor/DisjunctionTest.scala	/^class DisjunctionTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+DisjunctionTest	src/test/scala/learnfp/monad/DisjunctionTest.scala	/^class DisjunctionTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+Eq	src/main/scala/learnfp/typeclass/Eq.scala	/^object Eq {$/;"	o	language:scala
+Eq	src/main/scala/learnfp/typeclass/Eq.scala	/^trait Eq[A] {$/;"	t	language:scala
+EqInstances	src/main/scala/learnfp/typeclass/Eq.scala	/^object EqInstances {$/;"	o	language:scala
+EqOps	src/main/scala/learnfp/typeclass/Eq.scala	/^class EqOps[A](lhs:A)(implicit eqt:Eq[A]) {$/;"	c	language:scala
+EqOps	src/main/scala/learnfp/typeclass/Eq.scala	/^object EqOps {$/;"	o	language:scala
+EqTest	src/test/scala/learnfp/typeclass/EqTest.scala	/^class EqTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+FlatMap	src/main/scala/learnfp/free/Free.scala	/^final case class FlatMap[F[_], A, B](a:Free[F, A], fx:A => Free[F, B]) extends Free[F, B]$/;"	C	language:scala
+Free	src/main/scala/learnfp/free/Free.scala	/^object Free {$/;"	o	language:scala
+Free	src/main/scala/learnfp/free/Free.scala	/^sealed trait Free[F[_], A]$/;"	t	language:scala
+FreeTest	src/test/scala/learnfp/free/FreeTest.scala	/^class FreeTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+Functor	src/main/scala/learnfp/functor/Functor.scala	/^trait Functor[F[_]] {$/;"	t	language:scala
+FunctorOps	src/main/scala/learnfp/functor/Functor.scala	/^class FunctorOps[A, F[_]](a:F[A])(implicit functor:Functor[F]) {$/;"	c	language:scala
+FunctorOps	src/main/scala/learnfp/functor/Functor.scala	/^object FunctorOps {$/;"	o	language:scala
+FxApplicativeOps	src/main/scala/learnfp/applicative/Applicative.scala	/^class FxApplicativeOps[A, R, F[_]](fx:F[A => R]) {$/;"	c	language:scala
+FxFunctorOps	src/main/scala/learnfp/functor/Functor.scala	/^class FxFunctorOps[A, B](fx:A => B) {$/;"	c	language:scala
+Id	src/main/scala/learnfp/functor/Id.scala	/^case class Id[A](value:A)$/;"	C	language:scala
+IdInstance	src/main/scala/learnfp/applicative/Id.scala	/^object IdInstance {$/;"	o	language:scala
+IdInstance	src/main/scala/learnfp/functor/Id.scala	/^object IdInstance {$/;"	o	language:scala
+IdInstance	src/main/scala/learnfp/monad/Id.scala	/^object IdInstance {$/;"	o	language:scala
+IdT	src/main/scala/learnfp/transformer/IdT.scala	/^case class IdT[A, F[_]](runIdT:F[Id[A]])$/;"	C	language:scala
+IdT	src/main/scala/learnfp/transformer/IdT.scala	/^object IdT {$/;"	o	language:scala
+IdTTest	src/test/scala/learnfp/transformer/IdTTest.scala	/^class IdTTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+IdTest	src/test/scala/learnfp/applicative/IdTest.scala	/^class IdTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+IdTest	src/test/scala/learnfp/functor/IdTest.scala	/^class IdTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+IdTest	src/test/scala/learnfp/monad/IdTest.scala	/^class IdTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+Just	src/main/scala/learnfp/functor/Maybe.scala	/^  case class Just[A](value: A) extends Maybe[A]$/;"	C	language:scala
+Just	src/main/scala/learnfp/functor/Maybe.scala	/^  object Just {$/;"	o	language:scala
+LeftDisjunction	src/main/scala/learnfp/functor/Disjunction.scala	/^  case class LeftDisjunction[L, R](leftValue:L) extends Disjunction[L, R]$/;"	C	language:scala
+LiftF	src/main/scala/learnfp/free/Free.scala	/^final case class LiftF[F[_], A](fn:F[A]) extends Free[F, A]$/;"	C	language:scala
+ListInstance	src/main/scala/learnfp/applicative/List.scala	/^object ListInstance {$/;"	o	language:scala
+ListInstance	src/main/scala/learnfp/functor/List.scala	/^object ListInstance {$/;"	o	language:scala
+ListInstance	src/main/scala/learnfp/monad/List.scala	/^object ListInstance {$/;"	o	language:scala
+ListMonoid	src/main/scala/learnfp/monoid/ListMonoid.scala	/^object ListMonoid {$/;"	o	language:scala
+ListMonoidTest	src/test/scala/learnfp/monoid/ListMonoidTest.scala	/^class ListMonoidTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+ListTest	src/test/scala/learnfp/applicative/ListTest.scala	/^class ListTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+ListTest	src/test/scala/learnfp/functor/ListTest.scala	/^class ListTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+ListTest	src/test/scala/learnfp/monad/ListTest.scala	/^class ListTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+Maybe	src/main/scala/learnfp/functor/Maybe.scala	/^  sealed trait Maybe[+A]$/;"	t	language:scala
+Maybe	src/main/scala/learnfp/functor/Maybe.scala	/^object Maybe {$/;"	o	language:scala
+MaybeInstance	src/main/scala/learnfp/applicative/Maybe.scala	/^object MaybeInstance {$/;"	o	language:scala
+MaybeInstance	src/main/scala/learnfp/functor/Maybe.scala	/^object MaybeInstance {$/;"	o	language:scala
+MaybeInstance	src/main/scala/learnfp/monad/Maybe.scala	/^object MaybeInstance {$/;"	o	language:scala
+MaybeT	src/main/scala/learnfp/transformer/MaybeT.scala	/^case class MaybeT[A, M[_]](runMaybeT:M[Maybe[A]])(implicit f:Functor[M], m:Monad[M])$/;"	C	language:scala
+MaybeT	src/main/scala/learnfp/transformer/MaybeT.scala	/^object MaybeT {$/;"	o	language:scala
+MaybeTTest	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^class MaybeTTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+MaybeTest	src/test/scala/learnfp/applicative/MaybeTest.scala	/^class MaybeTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+MaybeTest	src/test/scala/learnfp/functor/MaybeTest.scala	/^class MaybeTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+MaybeTest	src/test/scala/learnfp/monad/MaybeTest.scala	/^class MaybeTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+Monad	src/main/scala/learnfp/monad/Monad.scala	/^abstract class Monad[M[_]](implicit functor:Functor[M]) {$/;"	c	language:scala
+MonadOps	src/main/scala/learnfp/monad/Monad.scala	/^class MonadOps[A, M[_]](a:M[A])(implicit monad:Monad[M]) {$/;"	c	language:scala
+MonadOps	src/main/scala/learnfp/monad/Monad.scala	/^object MonadOps {$/;"	o	language:scala
+MonadOpsPure	src/main/scala/learnfp/monad/Monad.scala	/^class MonadOpsPure[A](a:A) {$/;"	c	language:scala
+MonadTransOps	src/main/scala/learnfp/transformer/MonadTransformer.scala	/^class MonadTransOps[A, M[_]](a:M[A])(implicit m:Monad[M]) {$/;"	c	language:scala
+MonadTransformer	src/main/scala/learnfp/transformer/MonadTransformer.scala	/^abstract class MonadTransformer[M[_], T[_, _[_]]](implicit m:Monad[M], tm:Monad[({type E[X] = T[X, M]})#E]) {$/;"	c	language:scala
+MonadTransformer	src/main/scala/learnfp/transformer/MonadTransformer.scala	/^object MonadTransformer {$/;"	o	language:scala
+Monoid	src/main/scala/learnfp/monoid/Monoid.scala	/^object Monoid {$/;"	o	language:scala
+Monoid	src/main/scala/learnfp/monoid/Monoid.scala	/^trait Monoid[A] {$/;"	t	language:scala
+MonoidOps	src/main/scala/learnfp/monoid/Monoid.scala	/^class MonoidOps[A](lhs:A)(implicit monoid:Monoid[A]) {$/;"	c	language:scala
+MonoidOps	src/main/scala/learnfp/monoid/Monoid.scala	/^object MonoidOps {$/;"	o	language:scala
+MoveDown	src/test/scala/learnfp/free/FreeTest.scala	/^      case class MoveDown(d:Int) extends Movement[Unit]$/;"	C	language:scala
+MoveDown	src/test/scala/learnfp/free/FreeTest.scala	/^      case class MoveDown(pos:Position, d:Int) extends Movement[Position]$/;"	C	language:scala
+MoveLeft	src/test/scala/learnfp/free/FreeTest.scala	/^      case class MoveLeft(d:Int) extends Movement[Unit]$/;"	C	language:scala
+MoveLeft	src/test/scala/learnfp/free/FreeTest.scala	/^      case class MoveLeft(pos:Position, d:Int) extends Movement[Position]$/;"	C	language:scala
+MoveRight	src/test/scala/learnfp/free/FreeTest.scala	/^      case class MoveRight(d:Int) extends Movement[Unit]$/;"	C	language:scala
+MoveRight	src/test/scala/learnfp/free/FreeTest.scala	/^      case class MoveRight(pos:Position, d:Int) extends Movement[Position]$/;"	C	language:scala
+MoveUp	src/test/scala/learnfp/free/FreeTest.scala	/^      case class MoveUp(d:Int) extends Movement[Unit]$/;"	C	language:scala
+MoveUp	src/test/scala/learnfp/free/FreeTest.scala	/^      case class MoveUp(pos:Position, d:Int) extends Movement[Position]$/;"	C	language:scala
+Movement	src/test/scala/learnfp/free/FreeTest.scala	/^      sealed trait Movement[A]$/;"	t	language:scala
+MovementToId	src/test/scala/learnfp/free/FreeTest.scala	/^      class MovementToId extends Natural[Movement, Id] {$/;"	c	language:scala
+MovementToState	src/test/scala/learnfp/free/FreeTest.scala	/^      class MovementToState extends Natural[Movement, ({type E[X] = State[Position, X]})#E] {$/;"	c	language:scala
+MovementToWriterTState	src/test/scala/learnfp/free/FreeTest.scala	/^      class MovementToWriterTState extends Natural[Movement, TurtleStateWriter] {$/;"	c	language:scala
+Natural	src/main/scala/learnfp/free/Free.scala	/^abstract class Natural[F[_], G[_]] {$/;"	c	language:scala
+Nothing	src/main/scala/learnfp/functor/Maybe.scala	/^  case class Nothing[A]() extends Maybe[A]$/;"	C	language:scala
+Nothing	src/main/scala/learnfp/functor/Maybe.scala	/^  object Nothing {$/;"	o	language:scala
+OrError	src/test/scala/learnfp/monad/DisjunctionTest.scala	/^  type OrError[A] = Disjunction[String, A]$/;"	T	language:scala
+OuterT	src/test/scala/learnfp/transformer/TransformerStackTest.scala	/^    type OuterT[A] = WriterT[A, Maybe, List[String]]$/;"	T	language:scala
+Pair	src/main/scala/learnfp/monoid/PairAdditiveMonoid.scala	/^case class Pair[A, B](a:A, b:B)$/;"	C	language:scala
+PairAdditiveMonoid	src/main/scala/learnfp/monoid/PairAdditiveMonoid.scala	/^object PairAdditiveMonoid {$/;"	o	language:scala
+PairAdditiveMonoidTest	src/test/scala/learnfp/monoid/PairAdditiveMonoidTest.scala	/^class PairAdditiveMonoidTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+Position	src/test/scala/learnfp/free/FreeTest.scala	/^      case class Position(x:Int, y:Int)$/;"	C	language:scala
+Printer	src/main/scala/learnfp/typeclass/Show.scala	/^object Printer {$/;"	o	language:scala
+Product	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^  case class Product(value:Int)$/;"	C	language:scala
+Return	src/main/scala/learnfp/free/Free.scala	/^final case class Return[F[_], A](a:A) extends Free[F, A]$/;"	C	language:scala
+RightDisjunction	src/main/scala/learnfp/functor/Disjunction.scala	/^  case class RightDisjunction[L, R](rightValue:R) extends Disjunction[L, R]$/;"	C	language:scala
+Show	src/main/scala/learnfp/typeclass/Show.scala	/^trait Show[A] {$/;"	t	language:scala
+ShowInstances	src/main/scala/learnfp/typeclass/Show.scala	/^object ShowInstances {$/;"	o	language:scala
+ShowTest	src/test/scala/learnfp/typeclass/ShowTest.scala	/^class ShowTest extends FlatSpec with Matchers {$/;"	c	language:scala
+SimpleMonoid	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^object SimpleMonoid {$/;"	o	language:scala
+SimpleMonoidTest	src/test/scala/learnfp/monoid/SimpleMonoidTest.scala	/^class SimpleMonoidTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+Start	src/test/scala/learnfp/free/FreeTest.scala	/^      case class Start(pos:Position) extends Movement[Position]$/;"	C	language:scala
+Start	src/test/scala/learnfp/free/FreeTest.scala	/^      case class Start(pos:Position) extends Movement[Unit]$/;"	C	language:scala
+State	src/main/scala/learnfp/functor/State.scala	/^case class State[S, A](run:S => (S, A)) {$/;"	C	language:scala
+State	src/main/scala/learnfp/functor/State.scala	/^object State {$/;"	o	language:scala
+StateFxOps	src/main/scala/learnfp/functor/State.scala	/^  class StateFxOps[A, R](fx:A => R) {$/;"	c	language:scala
+StateInstance	src/main/scala/learnfp/applicative/State.scala	/^object StateInstance {$/;"	o	language:scala
+StateInstance	src/main/scala/learnfp/functor/State.scala	/^object StateInstance {$/;"	o	language:scala
+StateInstance	src/main/scala/learnfp/monad/State.scala	/^object StateInstance {$/;"	o	language:scala
+StateInstance	src/main/scala/learnfp/traversable/State.scala	/^object StateInstance {$/;"	o	language:scala
+StatePureApplicativeOps	src/main/scala/learnfp/applicative/State.scala	/^  class StatePureApplicativeOps[A](a:A) {$/;"	c	language:scala
+StateT	src/main/scala/learnfp/transformer/StateT.scala	/^case class StateT[S, M[_], A](runStateT: S => M[(S, A)])(implicit m:Monad[M])$/;"	C	language:scala
+StateT	src/main/scala/learnfp/transformer/StateT.scala	/^object StateT {$/;"	o	language:scala
+StateTTest	src/test/scala/learnfp/transformer/StateTTest.scala	/^class StateTTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+StateTest	src/test/scala/learnfp/applicative/StateTest.scala	/^class StateTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+StateTest	src/test/scala/learnfp/functor/StateTest.scala	/^class StateTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+StateTest	src/test/scala/learnfp/monad/StateTest.scala	/^class StateTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+StringDisjunction	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^      type StringDisjunction[A] = Disjunction[String, A]$/;"	T	language:scala
+StringState	src/test/scala/learnfp/monad/StateTest.scala	/^  type StringState[A] = State[String, A]$/;"	T	language:scala
+StringState	src/test/scala/learnfp/transformer/IdTTest.scala	/^      type StringState[A] = State[String, A]$/;"	T	language:scala
+StringState	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^      type StringState[A] = State[String, A]$/;"	T	language:scala
+StringState	src/test/scala/learnfp/transformer/WriterTTest.scala	/^      type StringState[A] = State[String, A]$/;"	T	language:scala
+StringWriter	src/test/scala/learnfp/transformer/StateTTest.scala	/^      type StringWriter[A] = Writer[List[String], A];$/;"	T	language:scala
+StringWriter	src/test/scala/learnfp/traversable/TraversableTest.scala	/^    type StringWriter[A] = Writer[List[String], A];$/;"	T	language:scala
+Sum	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^  case class Sum(value:Int)$/;"	C	language:scala
+TotalOrder	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^trait TotalOrder[A] {$/;"	t	language:scala
+TotalOrderInstances	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^object TotalOrderInstances {$/;"	o	language:scala
+TotalOrderTest	src/test/scala/learnfp/typeclass/TotalOrderTest.scala	/^class TotalOrderTest extends FlatSpec with Matchers {$/;"	c	language:scala
+TransformerStackTest	src/test/scala/learnfp/transformer/TransformerStackTest.scala	/^class TransformerStackTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+TraversableOps	src/main/scala/learnfp/traversable/Traversable.scala	/^class TraversableOps[A, F[_]](initialXs:List[F[A]])(implicit functor: Functor[F]) {$/;"	c	language:scala
+TraversableOps	src/main/scala/learnfp/traversable/Traversable.scala	/^object TraversableOps {$/;"	o	language:scala
+TraversableTest	src/test/scala/learnfp/traversable/TraversableTest.scala	/^class TraversableTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+TurtleState	src/test/scala/learnfp/free/FreeTest.scala	/^      type TurtleState[X] = State[Position, X]$/;"	T	language:scala
+TurtleStateWriter	src/test/scala/learnfp/free/FreeTest.scala	/^      type TurtleStateWriter[X] = WriterT[X, TurtleState, List[String]]$/;"	T	language:scala
+TypeClass	src/main/scala/learnfp/typeclass/TypeClass.scala	/^trait TypeClass[A] {$/;"	t	language:scala
+TypeClassInstances	src/main/scala/learnfp/typeclass/TypeClass.scala	/^object TypeClassInstances {$/;"	o	language:scala
+TypeClassTest	src/test/scala/learnfp/typeclass/TypeClassTest.scala	/^class TypeClassTest extends FlatSpec with Matchers {$/;"	c	language:scala
+TypeClassUser	src/main/scala/learnfp/typeclass/TypeClass.scala	/^object TypeClassUser {$/;"	o	language:scala
+Writer	src/main/scala/learnfp/functor/Writer.scala	/^case class Writer[W, A](run: () => (W, A))(implicit val monoid:Monoid[W])$/;"	C	language:scala
+Writer	src/main/scala/learnfp/functor/Writer.scala	/^object Writer {$/;"	o	language:scala
+WriterFunctorOps	src/main/scala/learnfp/functor/Writer.scala	/^  class WriterFunctorOps[A, B](fx:A => B) {$/;"	c	language:scala
+WriterInstance	src/main/scala/learnfp/applicative/Writer.scala	/^object WriterInstance {$/;"	o	language:scala
+WriterInstance	src/main/scala/learnfp/functor/Writer.scala	/^object WriterInstance {$/;"	o	language:scala
+WriterInstance	src/main/scala/learnfp/monad/Writer.scala	/^object WriterInstance {$/;"	o	language:scala
+WriterInstance	src/main/scala/learnfp/traversable/Writer.scala	/^object WriterInstance {$/;"	o	language:scala
+WriterPureOps	src/main/scala/learnfp/applicative/Writer.scala	/^  class WriterPureOps[A](a:A) {$/;"	c	language:scala
+WriterString	src/test/scala/learnfp/monad/WriterTest.scala	/^      type WriterString[A] = Writer[List[String], A];$/;"	T	language:scala
+WriterT	src/main/scala/learnfp/transformer/WriterT.scala	/^case class WriterT[A, M[_], W](runWriterT:() => M[(W, A)])(implicit f:Functor[M], m:Monad[M], w:Monoid[W])$/;"	C	language:scala
+WriterT	src/main/scala/learnfp/transformer/WriterT.scala	/^object WriterT {$/;"	o	language:scala
+WriterTTest	src/test/scala/learnfp/transformer/WriterTTest.scala	/^class WriterTTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+WriterTest	src/test/scala/learnfp/applicative/WriterTest.scala	/^class WriterTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+WriterTest	src/test/scala/learnfp/functor/WriterTest.scala	/^class WriterTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+WriterTest	src/test/scala/learnfp/monad/WriterTest.scala	/^class WriterTest extends WordSpecLike with Matchers {$/;"	c	language:scala
+a	src/test/scala/learnfp/functor/DisjunctionTest.scala	/^      val a = right[String, Int](10)$/;"	V	language:scala
+a	src/test/scala/learnfp/functor/MaybeTest.scala	/^      val a = {x:Int => x + 2}$/;"	V	language:scala
+a	src/test/scala/learnfp/functor/WriterTest.scala	/^      val a = { Writer({() => (List("een"), 10)}) fmap f fmap g }$/;"	V	language:scala
+a	src/test/scala/learnfp/monoid/ListMonoidTest.scala	/^      val a = List(1, 2, 3)$/;"	V	language:scala
+a	src/test/scala/learnfp/monoid/PairAdditiveMonoidTest.scala	/^      val a = Pair(Pair(Sum(1), Product(2)), Pair(List(3, 33, 333), Sum(4)))$/;"	V	language:scala
+appListInstance	src/main/scala/learnfp/applicative/List.scala	/^  implicit def appListInstance = new Applicative[List] {$/;"	m	language:scala
+b	src/test/scala/learnfp/functor/DisjunctionTest.scala	/^      val b = left[String, Int]("error")$/;"	V	language:scala
+b	src/test/scala/learnfp/functor/MaybeTest.scala	/^      val b = {x:Int => x * 2}$/;"	V	language:scala
+b	src/test/scala/learnfp/monoid/ListMonoidTest.scala	/^      val b = List(4, 5, 6)$/;"	V	language:scala
+b	src/test/scala/learnfp/monoid/PairAdditiveMonoidTest.scala	/^      val b = Pair(Pair(Sum(21), Product(22)), Pair(List(23, 233, 2333), Sum(24)))$/;"	V	language:scala
+baseToFunctorOps	src/main/scala/learnfp/functor/Disjunction.scala	/^  implicit def baseToFunctorOps[L, R, D[L, R] <: Disjunction[L, R]](disjunction: D[L, R])$/;"	m	language:scala
+c	src/test/scala/learnfp/monoid/ListMonoidTest.scala	/^      val c = List(7, 8, 9)$/;"	V	language:scala
+c	src/test/scala/learnfp/monoid/PairAdditiveMonoidTest.scala	/^      val c = Pair(Pair(Sum(31), Product(32)), Pair(List(33, 333, 3333), Sum(34)))$/;"	V	language:scala
+disjunctionInstance	src/main/scala/learnfp/applicative/Disjunction.scala	/^  implicit def disjunctionInstance[L] = new Applicative[({type E[X] = Disjunction[L, X]})#E]() {$/;"	m	language:scala
+disjunctionListToTraversableOps	src/main/scala/learnfp/traversable/Disjunction.scala	/^  implicit def disjunctionListToTraversableOps[A, L, D[_, _] <: Disjunction[L, A]](xs:List[Disjunction[L, A]])($/;"	m	language:scala
+disjunctionMonadInstance	src/main/scala/learnfp/monad/Disjunction.scala	/^  implicit def disjunctionMonadInstance[L] = new Monad[({type E[A] = Disjunction[L, A]})#E]() {$/;"	m	language:scala
+disjunctionToApplicativeOps	src/main/scala/learnfp/applicative/Disjunction.scala	/^  implicit def disjunctionToApplicativeOps[L, A, R](fx:Disjunction[L, A => R])($/;"	m	language:scala
+disjunctionToMonadOps	src/main/scala/learnfp/monad/Disjunction.scala	/^  implicit def disjunctionToMonadOps[L, R](disjunction:Disjunction[L, R]) = new MonadOps[R, ({type E[X] = Disjunction[L, X]})#E](disjunction)$/;"	m	language:scala
+doubleInstance	src/main/scala/learnfp/typeclass/Show.scala	/^  implicit val doubleInstance:Show[Double] = new Show[Double] {$/;"	V	language:scala
+down	src/test/scala/learnfp/free/FreeTest.scala	/^      def down(d:Int) = Free.liftF(MoveDown(d))$/;"	m	language:scala
+down	src/test/scala/learnfp/free/FreeTest.scala	/^      def down(p:Position, d:Int) = Free.liftF(MoveDown(p, d))$/;"	m	language:scala
+eitherInstance	src/main/scala/learnfp/functor/Disjunction.scala	/^  implicit def eitherInstance[L] = new Functor[({type E[A] = Disjunction[L, A]})#E] {$/;"	m	language:scala
+eq	src/main/scala/learnfp/typeclass/Eq.scala	/^    override def eq(lhs: Int, rhs: Int): Boolean = lhs == rhs$/;"	m	language:scala
+eq	src/main/scala/learnfp/typeclass/Eq.scala	/^    override def eq(lhs: List[A], rhs: List[A]): Boolean = {$/;"	m	language:scala
+eq	src/main/scala/learnfp/typeclass/Eq.scala	/^    override def eq(lhs: String, rhs: String): Boolean = lhs == rhs$/;"	m	language:scala
+eq	src/main/scala/learnfp/typeclass/Eq.scala	/^  def eq(lhs:A, rhs:A):Boolean$/;"	m	language:scala
+eq	src/main/scala/learnfp/typeclass/Eq.scala	/^  def eq[A](lhs:A, rhs:A)(implicit eqt:Eq[A]) = eqt.eq(lhs, rhs)$/;"	m	language:scala
+eval	src/main/scala/learnfp/functor/State.scala	/^  def eval(s:S):A = run(s)._2$/;"	m	language:scala
+exec	src/main/scala/learnfp/functor/State.scala	/^  def exec(s:S):S = run(s)._1$/;"	m	language:scala
+f	src/test/scala/learnfp/functor/DisjunctionTest.scala	/^      val f = { x:Int => x + 10 }$/;"	V	language:scala
+f	src/test/scala/learnfp/functor/IdTest.scala	/^      val f = {x:Int => x + 1}$/;"	V	language:scala
+f	src/test/scala/learnfp/functor/ListTest.scala	/^      val f = {x:Int => x + 1}$/;"	V	language:scala
+f	src/test/scala/learnfp/functor/StateTest.scala	/^      val f = {x:Int => x + 20}$/;"	V	language:scala
+f	src/test/scala/learnfp/functor/WriterTest.scala	/^      val f = {x:Int => x + 1}$/;"	V	language:scala
+flatMap	src/main/scala/learnfp/free/Free.scala	/^    override def flatMap[A, B](a: Free[F, A])(fx: A => Free[F, B]): Free[F, B] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/monad/Disjunction.scala	/^    override def flatMap[A, B](a: Disjunction[L, A])(fx: A => Disjunction[L, B]): Disjunction[L, B] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/monad/Id.scala	/^    override def flatMap[A, B](a: Id[A])(fx: A => Id[B]): Id[B] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/monad/List.scala	/^    override def flatMap[A, B](a: List[A])(fx: A => List[B]): List[B] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/monad/Maybe.scala	/^    override def flatMap[A, B](a: Maybe[A])(fx: A => Maybe[B]): Maybe[B] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/monad/Monad.scala	/^  def flatMap[A, B](a:M[A])(fx: A => M[B]):M[B]$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/monad/Monad.scala	/^  def flatMap[B](fx: A => M[B]):M[B] = monad.flatMap(a)(fx)$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/monad/State.scala	/^    override def flatMap[A, B](a: State[S, A])(fx: A => State[S, B]): State[S, B] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/monad/Writer.scala	/^    override def flatMap[A, B](a: Writer[W, A])(fx: A => Writer[W, B]): Writer[W, B] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/transformer/IdT.scala	/^    override def flatMap[A, B](a: IdT[A, M])(fx: A => IdT[B, M]): IdT[B, M] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/transformer/MaybeT.scala	/^    override def flatMap[A, B](a: MaybeT[A, M])(fx: A => MaybeT[B, M]): MaybeT[B, M] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/transformer/StateT.scala	/^    override def flatMap[A, B](a: StateT[S, M, A])(fx: A => StateT[S, M, B]): StateT[S, M, B] = ???$/;"	m	language:scala
+flatMap	src/main/scala/learnfp/transformer/WriterT.scala	/^      override def flatMap[A, B](a: WriterT[A, M, W])(fx: A => WriterT[B, M, W]): WriterT[B, M, W] = ???$/;"	m	language:scala
+floatEqInstance	src/main/scala/learnfp/typeclass/Eq.scala	/^  implicit val floatEqInstance = new Eq[String] {$/;"	V	language:scala
+fmap	src/main/scala/learnfp/free/Free.scala	/^    override def fmap[A, B](a: Free[F, A])(fx: A => B): Free[F, B] = ???$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/Disjunction.scala	/^    override def fmap[A, B](a: Disjunction[L, A])(fx: A => B): Disjunction[L, B] = {$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/Functor.scala	/^  def fmap[A, B](a:F[A])(fx:A => B):F[B]$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/Functor.scala	/^  def fmap[B](fx:A => B):F[B] = functor.fmap(a)(fx)$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/Id.scala	/^    override def fmap[A, B](a: Id[A])(fx: A => B): Id[B] = Id(fx(a.value))$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/List.scala	/^    override def fmap[A, B](a: List[A])(fx: A => B): List[B] = a.map(fx)$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/Maybe.scala	/^    def fmap[A, B](a: Just[A])(fx: A => B): Just[B] = Just[B](fx(a.value))$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/Maybe.scala	/^    def fmap[A, B](a: Nothing[A])(fx: A => B): Nothing[B] = Nothing[B]()$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/Maybe.scala	/^    override def fmap[A, B](a: Maybe[A])(fx: A => B): Maybe[B] = a match {$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/State.scala	/^    override def fmap[A, B](a: State[S, A])(fx: A => B): State[S, B] = State(s=>{$/;"	m	language:scala
+fmap	src/main/scala/learnfp/functor/Writer.scala	/^    override def fmap[A, B](a: Writer[W, A])(fx: A => B): Writer[W, B] = {$/;"	m	language:scala
+fmap	src/main/scala/learnfp/transformer/IdT.scala	/^    override def fmap[A, B](a: IdT[A, F])(fx: A => B): IdT[B, F] = ???$/;"	m	language:scala
+fmap	src/main/scala/learnfp/transformer/MaybeT.scala	/^    override def fmap[A, B](a: MaybeT[A, M])(fx: A => B): MaybeT[B, M] = ???$/;"	m	language:scala
+fmap	src/main/scala/learnfp/transformer/StateT.scala	/^    override def fmap[A, B](a: StateT[S, M, A])(fx: A => B): StateT[S, M, B] = ???$/;"	m	language:scala
+fmap	src/main/scala/learnfp/transformer/WriterT.scala	/^      override def fmap[A, B](a: WriterT[A, M, W])(fx: A => B): WriterT[B, M, W] = ???$/;"	m	language:scala
+foldF	src/main/scala/learnfp/free/Free.scala	/^  def foldF[F[_], M[_], A](a:Free[F, A])(trans:Natural[F, M])(implicit f:Functor[M], m:Monad[M]):M[A] = ???$/;"	m	language:scala
+foo	src/main/scala/learnfp/typeclass/TypeClass.scala	/^    override def foo(x:Int): String = "int"$/;"	m	language:scala
+foo	src/main/scala/learnfp/typeclass/TypeClass.scala	/^    override def foo(x:String): String = "string"$/;"	m	language:scala
+foo	src/main/scala/learnfp/typeclass/TypeClass.scala	/^  def foo(x:A):String$/;"	m	language:scala
+foo	src/main/scala/learnfp/typeclass/TypeClass.scala	/^  def foo[A](x:A)(implicit typeClass:TypeClass[A]):String  = {$/;"	m	language:scala
+foo	src/test/scala/learnfp/applicative/IdTest.scala	/^      def foo(x:Int)(y:Int)(z:Int) = x + y + z$/;"	m	language:scala
+freeFunctorInstance	src/main/scala/learnfp/free/Free.scala	/^  implicit def freeFunctorInstance[F[_]] = new Functor[({type E[X] = Free[F, X]})#E] {$/;"	m	language:scala
+freeMonadInstance	src/main/scala/learnfp/free/Free.scala	/^  implicit def freeMonadInstance[F[_]] = new Monad[({type E[X] = Free[F, X]})#E] {$/;"	m	language:scala
+freeToFunctorOps	src/main/scala/learnfp/free/Free.scala	/^  implicit def freeToFunctorOps[F[_], A](a:Free[F, A]) = new FunctorOps[A, ({type E[X] = Free[F, X]})#E](a)$/;"	m	language:scala
+freeToMonadOps	src/main/scala/learnfp/free/Free.scala	/^  implicit def freeToMonadOps[F[_], A](a:Free[F, A]) = new MonadOps[A, ({type E[X] = Free[F, X]})#E](a)$/;"	m	language:scala
+fxToApplicativeOps	src/main/scala/learnfp/applicative/Applicative.scala	/^  implicit def fxToApplicativeOps[A, R, F[_]](fx:F[A => R])(implicit applicative:Applicative[F]) = new FxApplicativeOps[A, R, F](fx)$/;"	m	language:scala
+fxToFunctorOps	src/main/scala/learnfp/functor/Functor.scala	/^  implicit def fxToFunctorOps[A, B](fx:A => B):FxFunctorOps[A, B] = new FxFunctorOps[A, B](fx)$/;"	m	language:scala
+g	src/test/scala/learnfp/functor/DisjunctionTest.scala	/^      val g = { x:Int => x * 2 }$/;"	V	language:scala
+g	src/test/scala/learnfp/functor/IdTest.scala	/^      val g = {x:Int => x * 2}$/;"	V	language:scala
+g	src/test/scala/learnfp/functor/ListTest.scala	/^      val g = {x:Int => x.toString + "a"}$/;"	V	language:scala
+g	src/test/scala/learnfp/functor/StateTest.scala	/^      val g = {x:Int => x * 2}$/;"	V	language:scala
+g	src/test/scala/learnfp/functor/WriterTest.scala	/^      val g = {x:Int => x * 2}$/;"	V	language:scala
+get	src/main/scala/learnfp/functor/State.scala	/^  def get[S]:State[S, S] = State(x=>(x,x))$/;"	m	language:scala
+getT	src/main/scala/learnfp/transformer/StateT.scala	/^  def getT[S, M[_]](implicit m:Monad[M]):StateT[S, M, S] = ???$/;"	m	language:scala
+idApplicativeInstance	src/main/scala/learnfp/applicative/Id.scala	/^  implicit val idApplicativeInstance = new Applicative[Id] {$/;"	V	language:scala
+idApplicativeInstance	src/main/scala/learnfp/applicative/Maybe.scala	/^  implicit val idApplicativeInstance = new Applicative[Maybe] {$/;"	V	language:scala
+idInstance	src/main/scala/learnfp/functor/Id.scala	/^  implicit val idInstance:Functor[Id] = new Functor[Id] {$/;"	V	language:scala
+idtFunctorInstance	src/main/scala/learnfp/transformer/IdT.scala	/^  implicit def idtFunctorInstance[F[_]](implicit outerFunctor:Functor[F]) = new Functor[({type E[X] = IdT[X, F]})#E] {$/;"	m	language:scala
+idtMonadInstance	src/main/scala/learnfp/transformer/IdT.scala	/^  implicit def idtMonadInstance[M[_]](implicit outerMonad:Monad[M], outerFunctor:Functor[M]) = new Monad[({type E[X] = IdT[X, M]})#E] {$/;"	m	language:scala
+idtMonadTransInstance	src/main/scala/learnfp/transformer/IdT.scala	/^  implicit def idtMonadTransInstance[M[_]](implicit m:Monad[M], f:Functor[M]) = new MonadTransformer[M, IdT] {$/;"	m	language:scala
+idtToMonadOps	src/main/scala/learnfp/transformer/IdT.scala	/^  implicit def idtToMonadOps[A, M[_]](a:IdT[A, M])(implicit m:Monad[M], f:Functor[M]) =$/;"	m	language:scala
+intEqInstance	src/main/scala/learnfp/typeclass/Eq.scala	/^  implicit val intEqInstance = new Eq[Int] {$/;"	V	language:scala
+intInstance	src/main/scala/learnfp/typeclass/Show.scala	/^  implicit val intInstance:Show[Int] = new Show[Int] {$/;"	V	language:scala
+intInstance	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^  implicit val intInstance:TotalOrder[Int] = new TotalOrder[Int] {$/;"	V	language:scala
+intInstance	src/main/scala/learnfp/typeclass/TypeClass.scala	/^  implicit val intInstance:TypeClass[Int] = new TypeClass[Int] {$/;"	V	language:scala
+just	src/main/scala/learnfp/functor/Maybe.scala	/^  def just[A](x:A):Maybe[A] = Just(x)$/;"	m	language:scala
+l	src/test/scala/learnfp/traversable/TraversableTest.scala	/^    def l(x:String) = left[String, Int](x)$/;"	m	language:scala
+learnfp.applicative	src/main/scala/learnfp/applicative/Applicative.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/main/scala/learnfp/applicative/Disjunction.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/main/scala/learnfp/applicative/Id.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/main/scala/learnfp/applicative/List.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/main/scala/learnfp/applicative/Maybe.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/main/scala/learnfp/applicative/State.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/main/scala/learnfp/applicative/Writer.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/test/scala/learnfp/applicative/DisjunctionTest.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/test/scala/learnfp/applicative/IdTest.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/test/scala/learnfp/applicative/ListTest.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/test/scala/learnfp/applicative/MaybeTest.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/test/scala/learnfp/applicative/StateTest.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.applicative	src/test/scala/learnfp/applicative/WriterTest.scala	/^package learnfp.applicative$/;"	p	language:scala
+learnfp.free	src/main/scala/learnfp/free/Free.scala	/^package learnfp.free$/;"	p	language:scala
+learnfp.free	src/test/scala/learnfp/free/FreeTest.scala	/^package learnfp.free$/;"	p	language:scala
+learnfp.functor	src/main/scala/learnfp/functor/Disjunction.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/main/scala/learnfp/functor/Functor.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/main/scala/learnfp/functor/Id.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/main/scala/learnfp/functor/List.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/main/scala/learnfp/functor/Maybe.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/main/scala/learnfp/functor/State.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/main/scala/learnfp/functor/Writer.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/test/scala/learnfp/functor/DisjunctionTest.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/test/scala/learnfp/functor/IdTest.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/test/scala/learnfp/functor/ListTest.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/test/scala/learnfp/functor/MaybeTest.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/test/scala/learnfp/functor/StateTest.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.functor	src/test/scala/learnfp/functor/WriterTest.scala	/^package learnfp.functor$/;"	p	language:scala
+learnfp.monad	src/main/scala/learnfp/monad/Disjunction.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/main/scala/learnfp/monad/Id.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/main/scala/learnfp/monad/List.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/main/scala/learnfp/monad/Maybe.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/main/scala/learnfp/monad/Monad.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/main/scala/learnfp/monad/State.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/main/scala/learnfp/monad/Writer.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/test/scala/learnfp/monad/DisjunctionTest.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/test/scala/learnfp/monad/IdTest.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/test/scala/learnfp/monad/ListTest.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/test/scala/learnfp/monad/MaybeTest.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/test/scala/learnfp/monad/StateTest.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monad	src/test/scala/learnfp/monad/WriterTest.scala	/^package learnfp.monad$/;"	p	language:scala
+learnfp.monoid	src/main/scala/learnfp/monoid/ListMonoid.scala	/^package learnfp.monoid$/;"	p	language:scala
+learnfp.monoid	src/main/scala/learnfp/monoid/Monoid.scala	/^package learnfp.monoid$/;"	p	language:scala
+learnfp.monoid	src/main/scala/learnfp/monoid/PairAdditiveMonoid.scala	/^package learnfp.monoid$/;"	p	language:scala
+learnfp.monoid	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^package learnfp.monoid$/;"	p	language:scala
+learnfp.monoid	src/test/scala/learnfp/monoid/ListMonoidTest.scala	/^package learnfp.monoid$/;"	p	language:scala
+learnfp.monoid	src/test/scala/learnfp/monoid/PairAdditiveMonoidTest.scala	/^package learnfp.monoid$/;"	p	language:scala
+learnfp.monoid	src/test/scala/learnfp/monoid/SimpleMonoidTest.scala	/^package learnfp.monoid$/;"	p	language:scala
+learnfp.transformer	src/main/scala/learnfp/transformer/IdT.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/main/scala/learnfp/transformer/MaybeT.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/main/scala/learnfp/transformer/MonadTransformer.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/main/scala/learnfp/transformer/StateT.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/main/scala/learnfp/transformer/WriterT.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/test/scala/learnfp/transformer/IdTTest.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/test/scala/learnfp/transformer/StateTTest.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/test/scala/learnfp/transformer/TransformerStackTest.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.transformer	src/test/scala/learnfp/transformer/WriterTTest.scala	/^package learnfp.transformer$/;"	p	language:scala
+learnfp.traversable	src/main/scala/learnfp/traversable/Disjunction.scala	/^package learnfp.traversable$/;"	p	language:scala
+learnfp.traversable	src/main/scala/learnfp/traversable/State.scala	/^package learnfp.traversable$/;"	p	language:scala
+learnfp.traversable	src/main/scala/learnfp/traversable/Traversable.scala	/^package learnfp.traversable$/;"	p	language:scala
+learnfp.traversable	src/main/scala/learnfp/traversable/Writer.scala	/^package learnfp.traversable$/;"	p	language:scala
+learnfp.traversable	src/test/scala/learnfp/traversable/TraversableTest.scala	/^package learnfp.traversable$/;"	p	language:scala
+learnfp.typeclass	src/main/scala/learnfp/typeclass/Eq.scala	/^package learnfp.typeclass$/;"	p	language:scala
+learnfp.typeclass	src/main/scala/learnfp/typeclass/Show.scala	/^package learnfp.typeclass$/;"	p	language:scala
+learnfp.typeclass	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^package learnfp.typeclass$/;"	p	language:scala
+learnfp.typeclass	src/main/scala/learnfp/typeclass/TypeClass.scala	/^package learnfp.typeclass$/;"	p	language:scala
+learnfp.typeclass	src/test/scala/learnfp/typeclass/EqTest.scala	/^package learnfp.typeclass$/;"	p	language:scala
+learnfp.typeclass	src/test/scala/learnfp/typeclass/ShowTest.scala	/^package learnfp.typeclass$/;"	p	language:scala
+learnfp.typeclass	src/test/scala/learnfp/typeclass/TotalOrderTest.scala	/^package learnfp.typeclass$/;"	p	language:scala
+learnfp.typeclass	src/test/scala/learnfp/typeclass/TypeClassTest.scala	/^package learnfp.typeclass$/;"	p	language:scala
+left	src/main/scala/learnfp/functor/Disjunction.scala	/^  def left[L, R](lv:L):Disjunction[L, R] = LeftDisjunction[L, R](lv)$/;"	m	language:scala
+left	src/test/scala/learnfp/free/FreeTest.scala	/^      def left(d:Int) = Free.liftF(MoveLeft(d))$/;"	m	language:scala
+left	src/test/scala/learnfp/free/FreeTest.scala	/^      def left(p:Position, d:Int) = Free.liftF(MoveLeft(p, d))$/;"	m	language:scala
+less	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^    override def less(lhs: Int, rhs: Int): Boolean = lhs < rhs$/;"	m	language:scala
+less	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^    override def less(lhs: List[T], rhs: List[T]): Boolean = lhs.zip(rhs).find((suborder.less _).tupled).nonEmpty$/;"	m	language:scala
+less	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^    override def less(lhs: String, rhs: String): Boolean = lhs.toInt < rhs.toInt$/;"	m	language:scala
+less	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^  def less(lhs:A, rhs:A):Boolean$/;"	m	language:scala
+less	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^  def less[A](lhs:A, rhs:A)(implicit order:TotalOrder[A]) = {$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/IdT.scala	/^    override def lift[A](a: M[A]): IdT[A, M] = ???$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/IdT.scala	/^  def lift[A, M[_]](a:M[A])(implicit f:Functor[M], m:Monad[M]):IdT[A, M] = idtMonadTransInstance[M].lift(a)$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/MaybeT.scala	/^    override def lift[A](a: M[A]): MaybeT[A, M] = ???$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/MaybeT.scala	/^  def lift[A, M[_]](a:M[A])(implicit f:Functor[M], m:Monad[M]):MaybeT[A, M] = maybeTMonadTransInstance.lift(a)$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/MonadTransformer.scala	/^  def lift[A](a:M[A]):T[A, M]$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/MonadTransformer.scala	/^  def lift[T[_, _[_]]](implicit tm:Monad[({type E[X] = T[X, M]})#E], t:MonadTransformer[M, T]):T[A, M] =$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/StateT.scala	/^      override def lift[A](a: M[A]): StateT[S, M, A] = ???$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/StateT.scala	/^  def lift[S, M[_], A](a:M[A])(implicit f:Functor[M], m:Monad[M]) = stateTMonadTransformerInstance[S, M].lift(a)$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/WriterT.scala	/^      override def lift[A](a: M[A]): WriterT[A, M, W] = WriterT.lift(a)$/;"	m	language:scala
+lift	src/main/scala/learnfp/transformer/WriterT.scala	/^  def lift[A,M[_], W](am:M[A])(implicit f:Functor[M], m:Monad[M], w:Monoid[W]):WriterT[A, M, W] = ???$/;"	m	language:scala
+liftF	src/main/scala/learnfp/free/Free.scala	/^  def liftF[F[_], A](a:F[A]):Free[F, A] = LiftF[F, A](a)$/;"	m	language:scala
+listEqInstance	src/main/scala/learnfp/typeclass/Eq.scala	/^  implicit def listEqInstance[A](implicit eqt:Eq[A]) = new Eq[List[A]] {$/;"	m	language:scala
+listInstance	src/main/scala/learnfp/functor/List.scala	/^  implicit val listInstance:Functor[List] = new Functor[List] {$/;"	V	language:scala
+listInstance	src/main/scala/learnfp/typeclass/Show.scala	/^  implicit def listInstance[T](implicit xShow:Show[T]):Show[List[T]] = new Show[List[T]] {$/;"	m	language:scala
+listInstance	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^  implicit def listInstance[T](implicit suborder:TotalOrder[T]):TotalOrder[List[T]] = new TotalOrder[List[T]] {$/;"	m	language:scala
+listMonadInstance	src/main/scala/learnfp/monad/List.scala	/^  implicit val listMonadInstance = new Monad[List] {$/;"	V	language:scala
+listMonoid	src/main/scala/learnfp/monoid/ListMonoid.scala	/^  implicit def listMonoid[T]:Monoid[List[T]] = new Monoid[List[T]] {$/;"	m	language:scala
+map	src/main/scala/learnfp/functor/Functor.scala	/^  def map[B](fx:A => B):F[B] = functor.fmap(a)(fx) \/\/ to be compatible with for$/;"	m	language:scala
+mappend	src/main/scala/learnfp/monoid/ListMonoid.scala	/^    override def mappend(lhs: List[T], rhs: List[T]): List[T] = lhs ::: rhs$/;"	m	language:scala
+mappend	src/main/scala/learnfp/monoid/Monoid.scala	/^  def mappend(lhs:A, rhs:A):A$/;"	m	language:scala
+mappend	src/main/scala/learnfp/monoid/PairAdditiveMonoid.scala	/^      override def mappend(lhs: Pair[A, B], rhs: Pair[A, B]): Pair[A, B] = Pair(aMonoid.mappend(lhs.a , rhs.a), bMonoid.mappend(lhs.b,rhs.b))$/;"	m	language:scala
+mappend	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^    override def mappend(lhs: Product, rhs: Product): Product = Product(lhs.value*rhs.value)$/;"	m	language:scala
+mappend	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^    override def mappend(lhs: Sum, rhs: Sum): Sum = Sum(lhs.value+rhs.value)$/;"	m	language:scala
+maybeInstance	src/main/scala/learnfp/functor/Maybe.scala	/^  implicit val maybeInstance:Functor[Maybe] = new Functor[Maybe] {$/;"	V	language:scala
+maybeTFunctorInstance	src/main/scala/learnfp/transformer/MaybeT.scala	/^  implicit def maybeTFunctorInstance[M[_]](implicit f:Functor[M], m:Monad[M]) = new Functor[({type E[X] = MaybeT[X, M]})#E] {$/;"	m	language:scala
+maybeTMonadInstance	src/main/scala/learnfp/transformer/MaybeT.scala	/^  implicit def maybeTMonadInstance[M[_]](implicit f:Functor[M], m:Monad[M]) = new Monad[({type E[X] = MaybeT[X, M]})#E]() {$/;"	m	language:scala
+maybeTMonadTransInstance	src/main/scala/learnfp/transformer/MaybeT.scala	/^  implicit def maybeTMonadTransInstance[M[_]](implicit f:Functor[M], m:Monad[M]) = new MonadTransformer[M, MaybeT] {$/;"	m	language:scala
+maybeTToMonadOps	src/main/scala/learnfp/transformer/MaybeT.scala	/^  implicit def maybeTToMonadOps[A, M[_]](a:MaybeT[A, M])(implicit m:Monad[M], f:Functor[M]) =$/;"	m	language:scala
+modify	src/main/scala/learnfp/functor/State.scala	/^  def modify[S](fx:S => S):State[S, Unit] = State(s=>(fx(s),()))$/;"	m	language:scala
+monadIdInstance	src/main/scala/learnfp/monad/Id.scala	/^  implicit val monadIdInstance = new Monad[Id] {$/;"	V	language:scala
+monadInstance	src/main/scala/learnfp/monad/Maybe.scala	/^  implicit val monadInstance = new Monad[Maybe] {$/;"	V	language:scala
+mzero	src/main/scala/learnfp/monoid/ListMonoid.scala	/^    override def mzero: List[T] = List()$/;"	m	language:scala
+mzero	src/main/scala/learnfp/monoid/Monoid.scala	/^  def mzero:A$/;"	m	language:scala
+mzero	src/main/scala/learnfp/monoid/Monoid.scala	/^  def mzero[A](implicit monoid:Monoid[A]):A = monoid.mzero$/;"	m	language:scala
+mzero	src/main/scala/learnfp/monoid/PairAdditiveMonoid.scala	/^      override def mzero: Pair[A, B] = Pair(aMonoid.mzero,bMonoid.mzero)$/;"	m	language:scala
+mzero	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^    override def mzero: Product = Product(1)$/;"	m	language:scala
+mzero	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^    override def mzero: Sum = Sum(0)$/;"	m	language:scala
+nestedMonoidInstance	src/main/scala/learnfp/monoid/PairAdditiveMonoid.scala	/^  implicit def nestedMonoidInstance[A, B](implicit aMonoid:Monoid[A], bMonoid:Monoid[B]):Monoid[Pair[A, B]] =$/;"	m	language:scala
+nothing	src/main/scala/learnfp/functor/Maybe.scala	/^  def nothing[A]():Maybe[A] = Nothing[A]()$/;"	m	language:scala
+nothingT	src/main/scala/learnfp/transformer/MaybeT.scala	/^  def nothingT[A, M[_]](implicit f:Functor[M], m:Monad[M]):MaybeT[A, M] = ???$/;"	m	language:scala
+oldS	src/main/scala/learnfp/functor/State.scala	/^      val oldS = a.run(s)$/;"	V	language:scala
+productMonoidInstance	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^  implicit val productMonoidInstance:Monoid[Product] = new Monoid[Product] {$/;"	V	language:scala
+program	src/test/scala/learnfp/free/FreeTest.scala	/^      lazy val program = for {$/;"	V	language:scala
+program	src/test/scala/learnfp/free/FreeTest.scala	/^      val program = for {$/;"	V	language:scala
+pure	src/main/scala/learnfp/applicative/Applicative.scala	/^  def pure[A](a:A):F[A]$/;"	m	language:scala
+pure	src/main/scala/learnfp/applicative/Disjunction.scala	/^    override def pure[A](a: A): Disjunction[L, A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/applicative/Id.scala	/^    override def pure[A](a: A): Id[A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/applicative/List.scala	/^    override def pure[A](a: A): List[A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/applicative/Maybe.scala	/^    override def pure[A](a: A): Maybe[A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/applicative/State.scala	/^    def pure[S] = stateApplicativeInstance[S].pure(a)$/;"	m	language:scala
+pure	src/main/scala/learnfp/applicative/State.scala	/^    override def pure[A](a: A): State[S, A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/applicative/Writer.scala	/^    def pure[W](implicit monoid: Monoid[W]) = writerApplicativeInstance[W].pure(a)$/;"	m	language:scala
+pure	src/main/scala/learnfp/applicative/Writer.scala	/^    override def pure[A](a: A): Writer[W, A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/free/Free.scala	/^    override def pure[A](a: A): Free[F, A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/monad/Disjunction.scala	/^    override def pure[A](a: A): Disjunction[L, A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/monad/Id.scala	/^    override def pure[A](a: A): Id[A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/monad/List.scala	/^    override def pure[A](a: A): List[A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/monad/Maybe.scala	/^    override def pure[A](a: A): Maybe[A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/monad/Monad.scala	/^  def pure[A](a:A):M[A]$/;"	m	language:scala
+pure	src/main/scala/learnfp/monad/Monad.scala	/^  def pure[M[_]](implicit monad:Monad[M]) = monad.pure(a)$/;"	m	language:scala
+pure	src/main/scala/learnfp/monad/State.scala	/^    override def pure[A](a: A): State[S, A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/monad/Writer.scala	/^    override def pure[A](a: A): Writer[W, A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/transformer/IdT.scala	/^    override def pure[A](a: A): IdT[A, M] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/transformer/MaybeT.scala	/^    override def pure[A](a: A): MaybeT[A, M] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/transformer/StateT.scala	/^    override def pure[A](a: A): StateT[S, M, A] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/transformer/WriterT.scala	/^      override def pure[A](a: A): WriterT[A, M, W] = ???$/;"	m	language:scala
+pure	src/main/scala/learnfp/transformer/WriterT.scala	/^  def pure[A, M[_], W](a:A)(implicit f:Functor[M], m:Monad[M], w:Monoid[W]) = writerTMonadInstance[W, M].pure(a)$/;"	m	language:scala
+pure	src/test/scala/learnfp/applicative/StateTest.scala	/^      def pure(x:Int) =$/;"	m	language:scala
+put	src/main/scala/learnfp/functor/State.scala	/^  def put[S](ns:S):State[S, Unit] = State(x=>(ns,()))$/;"	m	language:scala
+putT	src/main/scala/learnfp/transformer/StateT.scala	/^  def putT[S, M[_]](s:S)(implicit m:Monad[M]):StateT[S, M, Unit] = ???$/;"	m	language:scala
+r	src/test/scala/learnfp/transformer/WriterTTest.scala	/^      val r = {$/;"	V	language:scala
+r	src/test/scala/learnfp/traversable/TraversableTest.scala	/^    def r(x:Int) = right[String, Int](x)$/;"	m	language:scala
+rght	src/test/scala/learnfp/applicative/DisjunctionTest.scala	/^    def rght(x:Int):Disjunction[String, Int] = right[String, Int](x);$/;"	m	language:scala
+right	src/main/scala/learnfp/functor/Disjunction.scala	/^  def right[L, R](rv:R):Disjunction[L, R] = RightDisjunction[L, R](rv)$/;"	m	language:scala
+right	src/test/scala/learnfp/free/FreeTest.scala	/^      def right(d:Int) = Free.liftF(MoveRight(d))$/;"	m	language:scala
+right	src/test/scala/learnfp/free/FreeTest.scala	/^      def right(p:Position, d:Int) = Free.liftF(MoveRight(p, d))$/;"	m	language:scala
+sequence	src/main/scala/learnfp/traversable/Traversable.scala	/^  def sequence(implicit applicative: Applicative[F]):F[List[A]] = ???$/;"	m	language:scala
+show	src/main/scala/learnfp/typeclass/Show.scala	/^    override def show(x: Double): String = x.toString$/;"	m	language:scala
+show	src/main/scala/learnfp/typeclass/Show.scala	/^    override def show(x: Int): String = x.toString$/;"	m	language:scala
+show	src/main/scala/learnfp/typeclass/Show.scala	/^    override def show(xs:List[T]): String = s"[${xs.map(xShow.show(_)).reduce((sum,x)=>s"${sum}, ${x}")}]"$/;"	m	language:scala
+show	src/main/scala/learnfp/typeclass/Show.scala	/^  def show(x:A):String$/;"	m	language:scala
+show	src/main/scala/learnfp/typeclass/Show.scala	/^  def show[A](x:A)(implicit showInstance:Show[A]):String = {$/;"	m	language:scala
+start	src/test/scala/learnfp/free/FreeTest.scala	/^      def start(p:Position) = Free.liftF(Start(p))$/;"	m	language:scala
+stateApplicativeInstance	src/main/scala/learnfp/applicative/State.scala	/^  implicit def stateApplicativeInstance[S] = new Applicative[({type E[X] = State[S, X]})#E] {$/;"	m	language:scala
+stateInstance	src/main/scala/learnfp/functor/State.scala	/^  implicit def stateInstance[S] = new Functor[({type E[X] = State[S, X]})#E] {$/;"	m	language:scala
+stateListToTraversableOps	src/main/scala/learnfp/traversable/State.scala	/^  implicit def stateListToTraversableOps[S, A](xs:List[State[S, A]])($/;"	m	language:scala
+stateMonadInstance	src/main/scala/learnfp/monad/State.scala	/^  implicit def stateMonadInstance[S] = new Monad[({type E[X] = State[S, X]})#E]() {$/;"	m	language:scala
+stateTFunctorInstance	src/main/scala/learnfp/transformer/StateT.scala	/^  implicit def stateTFunctorInstance[S, M[_]](implicit f:Functor[M], m:Monad[M]) = new Functor[({type E[X] = StateT[S, M, X]})#E] {$/;"	m	language:scala
+stateTMonadInstance	src/main/scala/learnfp/transformer/StateT.scala	/^  implicit def stateTMonadInstance[S, M[_]](implicit f:Functor[M], m:Monad[M]) = new Monad[({type E[X] = StateT[S, M, X]})#E] {$/;"	m	language:scala
+stateTMonadTransformerInstance	src/main/scala/learnfp/transformer/StateT.scala	/^  implicit def stateTMonadTransformerInstance[S, M[_]](implicit f:Functor[M], m:Monad[M]) =$/;"	m	language:scala
+stateTToFunctorOps	src/main/scala/learnfp/transformer/StateT.scala	/^  implicit def stateTToFunctorOps[S, M[_], A](a:StateT[S, M, A])(implicit f:Functor[M], m:Monad[M]) =$/;"	m	language:scala
+stateTToMonadOps	src/main/scala/learnfp/transformer/StateT.scala	/^  implicit def stateTToMonadOps[S, M[_], A](a:StateT[S, M, A])(implicit f:Functor[M], m:Monad[M]) =$/;"	m	language:scala
+stateTToMonadTransOps	src/main/scala/learnfp/transformer/StateT.scala	/^  implicit def stateTToMonadTransOps[S, M[_], A](a:M[A])(implicit m:Monad[M]) = new MonadTransOps[A, M](a)$/;"	m	language:scala
+stateToApplicativeOps	src/main/scala/learnfp/applicative/State.scala	/^  implicit def stateToApplicativeOps[S, A, R](a:State[S, A => R]) = new FxApplicativeOps[A, R, ({type E[X] = State[S, X]})#E](a)$/;"	m	language:scala
+stateToMonadOps	src/main/scala/learnfp/monad/State.scala	/^  implicit def stateToMonadOps[S, A](a:State[S, A]) = new MonadOps[A, ({type E[X] = State[S, X]})#E](a)$/;"	m	language:scala
+stateToPureOps	src/main/scala/learnfp/applicative/State.scala	/^  implicit def stateToPureOps[A](a:A) = new StatePureApplicativeOps[A](a)$/;"	m	language:scala
+stringInstance	src/main/scala/learnfp/typeclass/TotalOrder.scala	/^  implicit val stringInstance:TotalOrder[String] = new TotalOrder[String] {$/;"	V	language:scala
+stringInstance	src/main/scala/learnfp/typeclass/TypeClass.scala	/^  implicit val stringInstance:TypeClass[String] = new TypeClass[String] {$/;"	V	language:scala
+sumMonoidInstance	src/main/scala/learnfp/monoid/SimpleMonoid.scala	/^  implicit val sumMonoidInstance:Monoid[Sum] = new Monoid[Sum] {$/;"	V	language:scala
+tell	src/main/scala/learnfp/functor/Writer.scala	/^  def tell[W](m:W)(implicit monoid:Monoid[W]):Writer[W, Unit] = Writer(()=>(m,()))$/;"	m	language:scala
+tell	src/main/scala/learnfp/transformer/WriterT.scala	/^  def tell[M[_], W](a:W)(implicit f:Functor[M], m:Monad[M], w:Monoid[W]):WriterT[Unit, M, W] = WriterT { () =>$/;"	m	language:scala
+testLift	src/test/scala/learnfp/transformer/IdTTest.scala	/^    def testLift[M[_]](implicit f:Functor[M], m:Monad[M]) = {$/;"	m	language:scala
+testPure	src/test/scala/learnfp/transformer/IdTTest.scala	/^    def testPure[M[_]](implicit functor:Functor[M], monad:Monad[M]) = {$/;"	m	language:scala
+testPure	src/test/scala/learnfp/transformer/MaybeTTest.scala	/^    def testPure[M[_]]()(implicit f:Functor[M], m:Monad[M]) = {$/;"	m	language:scala
+toEqOps	src/main/scala/learnfp/typeclass/Eq.scala	/^  implicit def toEqOps[A](lhs:A)(implicit eqt:Eq[A]) = new EqOps(lhs)$/;"	m	language:scala
+toFunctorOps	src/main/scala/learnfp/functor/Functor.scala	/^  implicit def toFunctorOps[A, F[_]](f:F[A])(implicit functor:Functor[F]):FunctorOps[A, F] = new FunctorOps(f)$/;"	m	language:scala
+toFunctorOps	src/main/scala/learnfp/functor/State.scala	/^  implicit def toFunctorOps[S, A, State[S, A]](f:State[S, A])(implicit functor:Functor[({type E[X] = State[S, X]})#E]) =$/;"	m	language:scala
+toFunctorOps	src/main/scala/learnfp/transformer/WriterT.scala	/^  implicit def toFunctorOps[A, M[_], W](a:WriterT[A, M, W])(implicit f:Functor[M], m:Monad[M], w:Monoid[W]):FunctorOps[A, ({type E[X] = WriterT[X, M, W]})#E] =$/;"	m	language:scala
+toFxOps	src/main/scala/learnfp/functor/Disjunction.scala	/^  implicit def toFxOps[A, R](fx:A => R):DisjunctionFxOps[A, R] = new DisjunctionFxOps(fx)$/;"	m	language:scala
+toMonadOps	src/main/scala/learnfp/monad/Monad.scala	/^  implicit def toMonadOps[A, M[_]](a:M[A])(implicit monad:Monad[M]) = new MonadOps[A, M](a)$/;"	m	language:scala
+toMonadOpsPure	src/main/scala/learnfp/monad/Monad.scala	/^  implicit def toMonadOpsPure[A](a:A) = new MonadOpsPure(a)$/;"	m	language:scala
+toMonadTransOps	src/main/scala/learnfp/transformer/MonadTransformer.scala	/^  implicit def toMonadTransOps[A, M[_]](a:M[A])(implicit m:Monad[M]) = new MonadTransOps[A, M](a)$/;"	m	language:scala
+toMonoidOps	src/main/scala/learnfp/monoid/Monoid.scala	/^  implicit def toMonoidOps[A](x:A)(implicit monoid:Monoid[A]):MonoidOps[A] = new MonoidOps[A](x)$/;"	m	language:scala
+toPureOps	src/main/scala/learnfp/applicative/Writer.scala	/^  implicit def toPureOps[A](a:A) = new WriterPureOps[A](a)$/;"	m	language:scala
+toStateFxOps	src/main/scala/learnfp/functor/State.scala	/^  implicit def toStateFxOps[A, R](fx:A => R) = new StateFxOps(fx)$/;"	m	language:scala
+toTraversableOps	src/main/scala/learnfp/traversable/Traversable.scala	/^  implicit def toTraversableOps[A, F[_]](xs:List[F[A]])(implicit functor:Functor[F]) = new TraversableOps[A, F](xs)$/;"	m	language:scala
+transform	src/main/scala/learnfp/free/Free.scala	/^  def transform[A](a:F[A]):G[A]$/;"	m	language:scala
+transform	src/test/scala/learnfp/free/FreeTest.scala	/^        override def transform[A](a: Movement[A]): Id[A] = a match {$/;"	m	language:scala
+transform	src/test/scala/learnfp/free/FreeTest.scala	/^        override def transform[A](a: Movement[A]): State[Position, A] = a match {$/;"	m	language:scala
+transform	src/test/scala/learnfp/free/FreeTest.scala	/^        override def transform[A](a: Movement[A]): TurtleStateWriter[A] = a match {$/;"	m	language:scala
+traverse	src/main/scala/learnfp/traversable/Traversable.scala	/^  def traverse[B](fx:A => B)(implicit applicative: Applicative[F]):F[List[B]] = ???$/;"	m	language:scala
+up	src/test/scala/learnfp/free/FreeTest.scala	/^      def up(d:Int) = Free.liftF(MoveUp(d))$/;"	m	language:scala
+up	src/test/scala/learnfp/free/FreeTest.scala	/^      def up(p:Position, d:Int) = Free.liftF(MoveUp(p, d))$/;"	m	language:scala
+v	src/main/scala/learnfp/functor/Writer.scala	/^      val v = a.run()$/;"	V	language:scala
+writerApplicativeInstance	src/main/scala/learnfp/applicative/Writer.scala	/^  implicit def writerApplicativeInstance[W](implicit monoid:Monoid[W]) = new Applicative[({type E[X] = Writer[W, X]})#E] {$/;"	m	language:scala
+writerInstance	src/main/scala/learnfp/functor/Writer.scala	/^  implicit def writerInstance[W] = new Functor[({type E[X] = Writer[W, X]})#E] {$/;"	m	language:scala
+writerListToTraversableOps	src/main/scala/learnfp/traversable/Writer.scala	/^  implicit def writerListToTraversableOps[W, A](xs:List[Writer[W, A]])($/;"	m	language:scala
+writerMonadInstance	src/main/scala/learnfp/monad/Writer.scala	/^  implicit def writerMonadInstance[W](implicit monoid:Monoid[W]) = new Monad[({type E[X] = Writer[W, X]})#E] {$/;"	m	language:scala
+writerTFunctorInstance	src/main/scala/learnfp/transformer/WriterT.scala	/^  implicit def writerTFunctorInstance[W, M[_]](implicit f:Functor[M], m:Monad[M], w:Monoid[W]) =$/;"	m	language:scala
+writerTMonadInstance	src/main/scala/learnfp/transformer/WriterT.scala	/^  implicit def writerTMonadInstance[W, M[_]](implicit f:Functor[M], m:Monad[M], w:Monoid[W]) =$/;"	m	language:scala
+writerTMonadTransInstance	src/main/scala/learnfp/transformer/WriterT.scala	/^  implicit def writerTMonadTransInstance[A, M[_], W](implicit f:Functor[M], m:Monad[M], w:Monoid[W]) =$/;"	m	language:scala
+writerTToMonadOps	src/main/scala/learnfp/transformer/WriterT.scala	/^  implicit def writerTToMonadOps[A, M[_], W](a:WriterT[A, M, W])(implicit f:Functor[M], m:Monad[M], w:Monoid[W]) =$/;"	m	language:scala
+writerToApplicativeOps	src/main/scala/learnfp/applicative/Writer.scala	/^  implicit def writerToApplicativeOps[A, R, W](fx:Writer[W, A => R])(implicit monoid:Monoid[W]) =$/;"	m	language:scala
+writerToFunctorFxOps	src/main/scala/learnfp/functor/Writer.scala	/^  implicit def writerToFunctorFxOps[A, R](fx:A => R) = new WriterFunctorOps[A, R](fx)$/;"	m	language:scala
+writerToFunctorOps	src/main/scala/learnfp/functor/Writer.scala	/^  implicit def writerToFunctorOps[A, W](a:Writer[W, A]) = new FunctorOps[A, ({type E[X] = Writer[W, X]})#E](a)$/;"	m	language:scala
+writerToMonadOps	src/main/scala/learnfp/monad/Writer.scala	/^  implicit def writerToMonadOps[W, A](w:Writer[W, A])(implicit monoid:Monoid[W]) = new MonadOps[A, ({type E[X] = Writer[W, X]})#E](w)$/;"	m	language:scala
+x	src/test/scala/learnfp/functor/DisjunctionTest.scala	/^      val x = right[String, Int](10)$/;"	V	language:scala
+x	src/test/scala/learnfp/functor/DisjunctionTest.scala	/^      val x:Disjunction[String, Int] = RightDisjunction[String, Int](10)$/;"	V	language:scala
