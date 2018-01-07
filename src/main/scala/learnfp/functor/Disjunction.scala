@@ -12,14 +12,21 @@ object Disjunction {
 object DisjunctionInstance {
   import Disjunction._
   implicit def eitherInstance[L] = new Functor[({type E[A] = Disjunction[L, A]})#E] {
-    override def fmap[A, B](a: Disjunction[L, A])(fx: A => B): Disjunction[L, B] = ???
+    override def fmap[A, B](a: Disjunction[L, A])(fx: A => B): Disjunction[L, B] = {
+      a match {
+        case LeftDisjunction(v) => left[L,B](v)
+        case RightDisjunction(v) => right[L,B](fx(v))
+      }
+    }
   }
 
+  // why this?
   implicit def baseToFunctorOps[L, R, D[L, R] <: Disjunction[L, R]](disjunction: D[L, R])
                                  (implicit functor:Functor[({type E[A] = D[L, A]})#E])= {
     new FunctorOps[R, ({type E[A] = D[L, A]})#E](disjunction)
   }
 
+  // why this?
   class DisjunctionFxOps[A, R](fx:A => R) {
     def `<$>`[L](a:Disjunction[L, A]):Disjunction[L, R] = a fmap fx
   }
