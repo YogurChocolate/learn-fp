@@ -27,7 +27,7 @@ object EqInstances {
 
   implicit def listEqInstance[A](implicit eqt:Eq[A]) = new Eq[List[A]] {
     override def eq(lhs: List[A], rhs: List[A]): Boolean = {
-      (lhs.length == rhs.length) && lhs.zip(rhs).find(x=>(!eqt.eq(x._1,x._2))).isEmpty
+      (lhs.length == rhs.length) && lhs.zip(rhs).find(x=>(!Eq.eq(x._1,x._2))).isEmpty
     }
   }
 }
