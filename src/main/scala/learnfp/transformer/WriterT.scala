@@ -15,7 +15,10 @@ case class WriterT[A, M[_], W](runWriterT:() => M[(W, A)])(implicit f:Functor[M]
 object WriterT {
   implicit def writerTFunctorInstance[W, M[_]](implicit f:Functor[M], m:Monad[M], w:Monoid[W]) =
     new Functor[({type E[X] = WriterT[X, M, W]})#E] {
-      override def fmap[A, B](a: WriterT[A, M, W])(fx: A => B): WriterT[B, M, W] = ???
+      override def fmap[A, B](a: WriterT[A, M, W])(fx: A => B): WriterT[B, M, W] = {
+        val result = () => f.fmap(a.runWriterT())(x=>(x._1,fx(x._2)))
+        WriterT(result)
+      }
     }
 
   implicit def toFunctorOps[A, M[_], W](a:WriterT[A, M, W])(implicit f:Functor[M], m:Monad[M], w:Monoid[W]):FunctorOps[A, ({type E[X] = WriterT[X, M, W]})#E] =
@@ -24,11 +27,17 @@ object WriterT {
 
   implicit def writerTMonadInstance[W, M[_]](implicit f:Functor[M], m:Monad[M], w:Monoid[W]) =
     new Monad[({type E[X] = WriterT[X, M, W]})#E]() {
-      override def pure[A](a: A): WriterT[A, M, W] = ???
-      override def flatMap[A, B](a: WriterT[A, M, W])(fx: A => WriterT[B, M, W]): WriterT[B, M, W] = ???
+      override def pure[A](a: A): WriterT[A, M, W] = WriterT(()=>m.pure((w.mzero,a)))
+      override def flatMap[A, B](a: WriterT[A, M, W])(fx: A => WriterT[B, M, W]): WriterT[B, M, W] = {
+        val result = () => m.flatMap(a.runWriterT())(x=>{
+          val neww = fx(x._2).runWriterT()
+           f.fmap(neww)(y=>(w.mappend(x._1,y._1),y._2))
+        })
+        WriterT(result)
+      }
     }
 
-  def lift[A,M[_], W](am:M[A])(implicit f:Functor[M], m:Monad[M], w:Monoid[W]):WriterT[A, M, W] = ???
+  def lift[A,M[_], W](am:M[A])(implicit f:Functor[M], m:Monad[M], w:Monoid[W]):WriterT[A, M, W] = WriterT(()=>f.fmap(am)(x=>(w.mzero,x)))
 
   implicit def writerTToMonadOps[A, M[_], W](a:WriterT[A, M, W])(implicit f:Functor[M], m:Monad[M], w:Monoid[W]) =
     new MonadOps[A, ({type E[X] = WriterT[X, M, W]})#E](a)
